@@ -17,8 +17,33 @@
                 <a class="navbar-brand" href="#"><i class="fab fa-instagram"></i> Instagram</a>
                 <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarsupportedcontent">
                  <form class="">
-                  <button class="btn btn-success" type="submit">Create a new post</button>
+                  <button class="btn btn-success" data-toggle="modal" data-target="#newpost">Create a new post</button>
                  </form>
+                 <div class="modal fade" id="newpost" tabindex="-1" role="dialog" aria-hidden="true">
+                     <div class="modal-dialog" role="document">
+                          <div class="modal-header">
+                              <h5 class="modal-title">New Post</h5>
+                               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                   <span aria-hidden="true">&times;</span>
+                               </button>
+                          </div>
+                          <div class="modal-body">
+                             <form>
+                                 <div class="form-group">
+                                     <label for="recipient-name" class="col-form-label">Recipient:</label>
+                                      <input type="text" class="form-control" id="recipient-name">
+                                      </div>
+                                      <div class="form-group">
+                                          <label for="message-text" class="col-form-label">Message:</label>
+                                          <textarea class="form-control" id="message-text"></textarea>
+                                      </div>
+                                 </div>
+                             </form>
+                             
+                          </div>
+                     </div>
+                 </div>
+
                     <ul class="navbar-nav mb-2 mb-lg-0">
                         <div class="dropdown">
                         <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cog"></i></button>
